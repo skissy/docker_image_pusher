@@ -142,7 +142,7 @@ jobs:
             echo "docker tag $image $new_image"
             docker tag $image onlyoffice:latest
             echo "docker push $new_image"
-            docker push $new_image
+            docker push onlyoffice:latest
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
